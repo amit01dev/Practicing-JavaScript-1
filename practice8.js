@@ -165,7 +165,7 @@
 // we hava to decide what  we want to use const or let --
 // const {name , age} = person
 // console.log(name ,age);
-// the other two key & value is not affect from this the will not print .
+// the other two key & value is not affect from this they will not print .
 // if we want to store the values of the keys in different variable then we use this----
 // const {name:var1 , age:var2} = person 
 // console.log(var1 , var2);
