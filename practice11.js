@@ -250,23 +250,24 @@ example = [{firstName: "Amit", age : 28},
 
 // map method ----***
 
-const number = [4,5,6,4,3,5];
+// const number = [4,5,6,4,3,5];
 
-const square = function(number){
-    return number*number;
-}
+// const square = function(number){
+//     return number*number;
+// }
 
-const newsquare = number.map(square);
+// const newsquare = number.map(square);
 
- console.log(newsquare);
+//  console.log(newsquare);
 
 
 // here above the squre is becoming function it is called function declaration.
 // explain --- here above what happens is that number.map(square) is going first to number & pick a number then go to the square & run this function & then it is saved in newsquare & we are printing the newsquare.
 
 // map giving a new array which we store in a variable , now this variable is converted into an array. here is the proof ---
-console.log(typeof newsquare);
-console.log(Array.isArray(newsquare));
+
+// console.log(typeof newsquare);
+// console.log(Array.isArray(newsquare));
 
 
 // we can write the above code with less lines --- we can pack the square function inside map()---**
@@ -312,5 +313,38 @@ console.log(Array.isArray(newsquare));
 // console.log(new2);
 
 // filter method ---***
-// it is return boolean value
- 
+// it is return boolean value.
+// number1.filter() , it is taking callback function inside the ().
+
+// const number1 = [1,3,4,5,6,4,22,45,66];
+// const isEven = function(number){
+//     return number%2 === 0;
+// }
+
+// const new1 = number1.filter(isEven);
+// console.log(new1);
+
+// here above what is happening is that if the condition is satisfied then it is only print the element of the array which satisfied the condition.
+
+// written in shortest way ----
+
+// const number1 = [1,3,4,5,6,4,22,45,66,32];
+
+// const new1 = number1.filter(function(number){return number % 2 ===0;});
+// console.log(new1);
+
+// in the just above line 333 we use a function inside number.filter(), this function is called annonamus function.
+
+
+// written in more shortest ---
+// we write arrow function --
+const number1 = [1,3,4,5,6,4,22,45,66,32];
+
+const new1 = number1.filter((number)=> {return number % 2 ===0;});
+console.log(new1);
+
+
+/* this is a multiline comment
+it is appiled here also */
+
+

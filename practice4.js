@@ -1,12 +1,12 @@
-//chapter 23 --
-// for loop ---
+//chapter 23 --***
+// for loop ---***
 // method 1
 
 // for (let i = 0; i <= 9; i++) {
 //     console.log(i);
 // }
 
-// in method 1  the i is not accessible outside the for loop if we write console.log (i); just after the for loop it can't print the value of i 
+// ****in method 1  the i is not accessible outside the for loop if we write console.log (i); just after the for loop it can't print the value of i 
 
 // but if we use var for definining variable then the i is accessible outside of the for loop.
 

@@ -1,5 +1,5 @@
 // chapter 24---
-// break & continue ----
+// break & continue ----***
 
 // for (let i = 0; i<=10; i++){
 //     if (i===5){
@@ -23,7 +23,7 @@
 // here when 5 occur it doesn't excecute console.log (i) and go to the loop and next 6 is printed.in other worlds it skip 5.
 
 
-// do while loop ------------
+// do while loop ------------****
 
 //  this is the normal while loop---
 
@@ -47,14 +47,14 @@
 // it print 13 one time b/c while condition is checked after the do operation happend.
 
 
-// chapter 26 -------------
+// chapter 26 -------------****
 
 // two major data types are -- 1. primitive data type & 2. reference data type
 // in primitive data type --- string ,number , booleans , null , undefine etc.
 // in reference data type -- arrays 
 
 
-// arrays ----
+// arrays ----***
 
 // it is a reference data type
 // it is ordered collection of items -means everthing in array is in order we can access with the indexing. 
@@ -107,7 +107,7 @@
 // fruit.push ("kivi");
 // console.log(fruit);
 
-// pop 
+// pop ---***
 
 // let fruit1 =["apple" , "mango", "banana"];
 // console.log(fruit1);
@@ -117,6 +117,20 @@
 // the pop is removing  the last value of array & it store it within itself & we can print this value ---
 
 // console.log(fruit1.pop());
+
+// ### *** this above is wrong code in a context of printing the remove element , in this above code fruit1.pop() will remove the last element & when we do console.log(fruit1.pop()), then it will again pop the last element which is mango & print it , intead of printing banana, it is printing mango.
+
+// so the correct code is below ---***
+// where we store the pop function inside a variable & then we will print the variable.
+
+
+// let fruit1 =["apple" , "mango", "banana", "lichi"];
+// console.log(fruit1);
+// let removeElement =  fruit1.pop();
+// console.log(fruit1);
+// console.log(removeElement);
+
+
 
 // unshift & shift
 
@@ -131,17 +145,26 @@
 
 
 
-// shift -------
+// shift -------***
 // it remove the first value of the array ---------
 
 // fruit2.shift();
 // let removeFruit = fruit2.shift();
 // console.log(removeFruit);
 
+// #### if we want to store the remove element then we can store it in a variable & then we can print this variable.
+
+// let fruit1 =["apple" , "mango", "banana"];
+// console.log(fruit1);
+// let removeElement = fruit1.shift();
+// console.log(fruit1);
+// console.log(removeElement);
+
+
 // in all the above which is the fast --- push is the fast b/c it go directly to the end of the array and past it.
 // in pop it has to read first all the element in the array then it dicide which  is last  & then it remove it
 
-// difference b/t primitive data type & reference data type ---
+// difference b/t primitive data type & reference data type ---***
 // the difference is elobrate in details in the notebook.
 
 // primitive data type ---
@@ -151,7 +174,7 @@
 // console.log(num1);
 // console.log(num2);
 
-// num1++
+// num1++ 
 // console.log(num1);
 // console.log(num2);
 
@@ -173,16 +196,22 @@
 // console.log(array1);
 // console.log(array2);
 
-// from our understanding code is runing top to bottom & it compiled it in that way & in this way array 1 having the incremented value but array2 don't have the incremented value -- then why it showing.
+// ***####from our understanding code is runing top to bottom & it compiled it in that way & in this way array 1 having the incremented value but array2 don't have the incremented value -- then why it showing.
 
 // b/c array is stored in heep instead of stack and in heep they have a address.
 // a indivisual  pointer is saved in stack for both arrays & having the address of the array in heep.
 
 // when we change in array it changes in heep but the address is not changed for this action so when we  print it then the pointer in the stack having the same address ( the address before the changes in array) & it print the array (changed array)
+// or chatGPT defination ---
+
+// ###*** in js array & object are passed by reference not by value. so when we assign a array to a variable then both variable pointing at the same memory location.so when any change happend in any one of these variable , this change is reflected in both variable.
+
 // in simple words two pointers pointing the same arrays.
 
 
-// -----------------how to close a array----------------
+// -----------------how to close a array----------------****
+// the problem we face the above which is the array is store in same memory so wheneven we change something in any variable, the same result is reflected in both the variable.
+// so to store both array into different memory we use these method ----
 
 let array1 = ["item1", "item2"];
 
@@ -193,11 +222,15 @@ let array1 = ["item1", "item2"];
 // console.log("array1", array1);
 // console.log("array2", array2);
 
+// in this 1 method we created array1 & in array2 we slice the array1 from 0 index to the last index & copy it into array2. if we use () then it will copy items from 1 index till last index.
+
 // method ---2---
 // let array2 =[].concat(array1);
 
 // console.log("array1", array1);
 // console.log("array2", array2);
+
+// inthis method it copy all the element from array1 b/c we use [] and concat means adding two numbers.
 
 // method ---3----
 // with the help of spread operator (... -- is spread operator) --

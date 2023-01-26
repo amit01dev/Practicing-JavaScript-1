@@ -21,7 +21,7 @@
 //     console.log(fruit[i]);
 // }
 
-// if i want that all the fruit should print in uppercase then ------
+// if i want that all the fruit should print in uppercase then ------*****
 
 // for (i=0; i<fruit.length; i++){
 //     console.log(fruit[i].toUpperCase());   
@@ -40,8 +40,10 @@
 //     console.log(fruit[i].toLowerCase());
 // }
 
-// if we want to store all the uppercase fruits element in a new array & then print it then ----------
+// if we want to store all the uppercase fruits element in a new array & then print it then ----------*****
 
+
+// 
 // let fruits1 =[];
 // for (i=0; i<fruit.length; i++){
 //     fruits1.push(fruit[i].toUpperCase());
@@ -49,7 +51,7 @@
 // console.log(fruits1);
 
 
-// const --- we can't reassign to const ----
+// const --- we can't reassign to const ----****
 
 // const pi = 49;
 // pi = 45;

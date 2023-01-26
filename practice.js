@@ -18,16 +18,16 @@
 // console.log(pi ** 2);  // used for finding power 2^2
 // console.log(pi ** 4);  // used for finding power 2^4
 
-// ----------------- indexing-------------------
-// let firstName = "amitrajpuohit"
-// console.log(firstName[4]);
+// ----------------- indexing-------------------**
+let firstName1 = "amitrajpuohit"
+console.log(firstName1[4]);
 // console.log(firstName.length);
 
 // last index 
-// console.log(firstName.length-1);
-// console.log(firstName[firstName.length-1]);
+console.log(firstName1.length-1);
+console.log(firstName1[firstName1.length-1]);
 
-// -------------ch7--------------
+// -------------ch7--------------**
 // trim ()
 // let college = "     ecb    ";
 // console.log(college);
@@ -50,16 +50,16 @@ firstName=firstName.toUpperCase();  // store the string in the same variable.
 console.log(firstName);
 // or 
 let secondName = firstName.toUpperCase(); // store the string in new variable.
-console.log(secondName);
+// console.log(secondName);
 
-let college = "eCb";
-console.log(college);
+// let college = "eCb";
+// console.log(college);
 
-college = college.toLowerCase();
-console.log(college); 
+// college = college.toLowerCase();
+// console.log(college); 
 
-let newcollege = college.toLowerCase();
-console.log(newcollege);
+// let newcollege = college.toLowerCase();
+// console.log(newcollege);
 
 
 // slice()----
@@ -71,4 +71,3 @@ rajasthan = rajasthan.slice(0,4); // it will select 0-3, if we write (1) then it
                                 //select all the character after 1, till the end.
 console.log(rajasthan);
                               // we can also  add this string (rajasthan.slice(0,4); into new a variable)
-

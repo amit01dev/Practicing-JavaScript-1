@@ -1,5 +1,5 @@
 // file no 18 ---
-//  if else if ----
+//  if else if ----***
 
 let temperature;
 // temperature = +prompt("Enter you city temp.")
@@ -25,7 +25,8 @@ else if (day === 6) { console.log("saturday"); }
 else { console.log("invaild input"); }
 
 
-// switch function ------
+
+// switch function ------***
 
 let temp = 20;
 switch (temp) {
@@ -41,9 +42,11 @@ switch (temp) {
         console.log("it's not  cold anymore");
 }
 
-// in switch function it is not taking < or > argument with =
+// ***in switch function it is not taking < or > argument with =
+// if we don't use break then,  when the condition is satisfied it will print the result & it will print all the output which are present after that condition which is satisfied. to prevent this we use break.
 
-// while loop ---------------
+
+// while loop ---------------****
 
 // let i = 1;
 // while (i <= 10) {

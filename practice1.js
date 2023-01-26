@@ -17,6 +17,17 @@
 
 // how to convert data types --------------
 
+
+// if we want to add one string & one number then js is converting number into string & the type of this new variable is string.    below the first method of converting number into string is example of this or we can say both are same---***## 
+
+let number =3;
+let string = "amit";
+let result  = number + string
+console.log(result);
+console.log(typeof result);
+
+
+
 // string to number --
 // 1.
 let college = "engineering";
